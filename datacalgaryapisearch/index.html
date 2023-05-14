@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Data Calary API Search</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="datasets.js"></script>
+    <link href="datasets.css" rel="stylesheet" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>
+                <table>
+                    <tr>
+                        <th class="colorHeader">
+                            I:Search Accident in Calgary:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Search by Quadrant. For example:SW ,SE ,NW , NE</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" size="30" id="quadrant" onkeyup="myFunction()"
+                                title="Please input a quadrant such as SW, SE, NW, NE"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Search by Start Date. For example:2022-12-11</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" size="30" id="start_dt"
+                                title="Please enter a date between 2022-11-05 and 2022-12-12"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Search by Description. For example:Traffic Accident, or Stalled vehicle</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" id="description" onkeyup="myFunction()"
+                                title="Please enter a description such as Traffic Accident, or Stalled vehicle"></td>
+
+                    </tr>
+
+                </table>
+            </th>
+
+            <th>
+
+                <table>
+                    <tr>
+                        <th class="colorHeader">
+                            II:Search for Traffic Camera in Calgary:
+                        </th>
+                    <tr>
+                        <td>Search Camera by location. For example: Stoney Trail, Memorial Drive</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" id="camera_location" onkeyup="myFunction()"
+                                title="Please enter a camera location in Calgary such as Stoney Trial, Memorial Dirve...">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Search Camera by quadrant. For example: SW, SE, NW, NE</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" id="quadrant2" onkeyup="myFunction()"
+                                title="Please enter the quadrant of Calgary such as SW,SE,NW,NE"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Search Camera by description. For example: Camera 15, Camera 20</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" id="description2" onkeyup="myFunction()"
+                                title="Please enter the camera description such as Camera 15 or Camera 20"></td>
+
+                    </tr>
+                </table>
+            </th>
+
+            <th>
+                <table>
+                    <tr>
+                        <th class="colorHeader">
+                            III:Search for Crime in Calgary:
+                        </th>
+                    <tr>
+                        <td>Search Crime by community name. For example: FOREST LAWN or FOOTHILLS </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" id="community_name" onkeyup="myFunction()"
+                                title="Please enter the community name such as Forest Lawn or foothills"></td>
+                    </tr>
+                    <tr>
+                        <td>Search Crime by category. For example: Theft OF Vehicle or Physical Disorder</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" id="category" onkeyup="myFunction()"
+                                title="Please enter the category of crime you want to search such as Theft ..."></td>
+                    </tr>
+
+                    <tr>
+                        <td>Search Crime by count. For example: 1 , 2</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" id="count"
+                                title="Plesae enter the count of crime you want to search">
+                        </td>
+                    </tr>
+                </table>
+            </th>
+
+            <th>
+                <table>
+                    <tr>
+                        <th class="colorHeader">
+                            IV:Search for Building Permit in Calgary:
+                        </th>
+                    <tr>
+                        <td>Search Building Permit by permitnum. For example: BP2021-14615</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" id="permitnum" onkeyup="myFunction()"
+                                title="Please enter the permit number such as BP2021-14615"></td>
+                    </tr>
+                    <tr>
+                        <td>Search Building Permit by Original Address. For example: 2521 2 AV NW</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" id="originaladdress" onkeyup="myFunction()"
+                                title="Please enter the original address you want to search such as 2521 2 AV NW"></td>
+                    </tr>
+                    <tr>
+                        <td>Search Building Permit by Estimate Project Cost. For example: 38576</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="30" id="estprojectcost" onkeyup="myFunction()"
+                                title="Please enter the estimate project cost you want to search by input number"></td>
+                    </tr>
+                </table>
+        </tr>
+    </table>
+    <br id="searchvalue">
+    <br>
+    <table id="searchresults"></table>
+</body>
+
+</html>
